@@ -1,0 +1,349 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="../../i/favicon.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../../i/app-icon72x72@2x.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="../../i/app-icon72x72@2x.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../../i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="../../css/amazeui.min.css">
+    <link rel="stylesheet" type="text/css" href="../../css/amazeui.datatables.min.css"/>
+    <link rel="stylesheet" href="../../css/demo.css">
+    <link rel="stylesheet" href="../../css/app.css">
+  </head>
+  <body>
+      <!-- 侧边栏内容 -->
+      <div id="doc-oc-demo1" class="am-offcanvas">
+        <div class="am-offcanvas-bar">
+          <div class="am-offcanvas-content">
+              <div class="tpl-left-nav tpl-left-nav-hover">
+                <div class="tpl-left-nav-title">
+                   	
+                </div>
+                <div class="tpl-left-nav-list">
+                    <ul class="tpl-left-nav-menu">
+                        <li class="tpl-left-nav-item">
+                            <a href="../../html/home.html" class="nav-link active">
+                                <i class="am-icon-home"></i>
+                                <span>首页</span>
+                            </a>
+                        </li>
+                        <li class="tpl-left-nav-item">
+                            <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                                <i class="am-icon-bar-chart"></i>
+                                <span>估值报表</span>
+                                <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                            </a>
+                            <ul class="tpl-left-nav-sub-menu">
+                                <li>
+                                    <a href="javascript:;">
+                                        <i class="am-icon-angle-right"></i>
+                                        <span>每日报表</span>
+                                    </a>
+
+                                    <a href="table-images-list.html">
+                                        <i class="am-icon-angle-right"></i>
+                                        <span>资产配置及投资组合</span>
+                                    </a>
+                                    <a href="cpjz.html">
+                                        <i class="am-icon-angle-right"></i>
+                                        <span>产品净值走势图</span>
+                                    </a>
+                                    <a href="form-news.html">
+                                        <i class="am-icon-angle-right"></i>
+                                        <span>原始估值表</span>
+                                    </a>
+                                 </li>
+                            </ul>
+                        </li>
+                        <li class="tpl-left-nav-item">
+                            <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                                <i class="am-icon-table"></i>
+                                <span>表格</span>
+                                <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                            </a>
+                            <ul class="tpl-left-nav-sub-menu">
+                                <li>
+                                    <a href="table-font-list.html">
+                                        <i class="am-icon-angle-right"></i>
+                                        <span>文字表格</span>
+                                    </a>
+
+                                    <a href="table-images-list.html">
+                                        <i class="am-icon-angle-right"></i>
+                                        <span>图片表格</span>
+                                    </a>
+                                    <a href="form-news.html">
+                                        <i class="am-icon-angle-right"></i>
+                                        <span>消息列表</span>
+                                    </a>
+                                 </li>
+                            </ul>
+                        </li>
+                        <li class="tpl-left-nav-item">
+                            <a href="/myproject/index.html" class="nav-link tpl-left-nav-link-list">
+                                <i class="am-icon-key"></i>
+                                <span>注销</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+      <!-- 侧边栏内容 -->                                                                                                                                        
+      <header class="am-topbar am-topbar-inverse admin-header">
+        <div class="am-topbar-brand">
+                <strong>CRCTRUST</strong><small>MOM数据查询</small>
+        </div>
+         <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-offcanvas="{target: '#doc-oc-demo1'}">
+            <span class="am-sr-only">导航切换</span> 
+            <span class="am-icon-bars"></span>
+         </button>
+     	</header>
+     	<div class="am-cf">
+		        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">每日报表</strong></div>
+		      </div>
+	    <div class="am-content">
+	    	<div class="am-panel-group" id="accordion">
+	    		<div class="am-panel am-panel-default">
+	    			<div class="am-panel-hd">
+	    				<h4 class="am-panel-title" data-am-collapse="{parent: '#accordion',target: '#do-not-say-1'}">
+	    					条件筛选
+	    				</h4>
+	    			</div>
+	    			<div id="do-not-say-1" class="am-panel-collapse am-collapse am-in">
+	    				<div class="am-panel-bd">
+	    					<form action="" class="am-form" data-am-validator>
+								<div class="am-form-group">
+									<label for="doc-select-1">产品名称</label>
+									<select id="doc-select-1">
+
+									</select>
+									<span class="am-form-caret"></span>
+								</div>
+								<p>
+									估值日期<br />
+									<input type="text" id="begin" class="am-form-field" placeholder="YYYY-MM-SS" data-am-datepicker readonly required/>
+								</p>
+								<p>
+									<button class="am-btn am-btn-primary">提交</button>
+								</p>
+							</form>
+	    				</div>
+	    			</div>
+	    		</div>	    		
+	    	</div>
+	    </div>
+	   	<div class="am-container dailytable">
+	   		<div class="am-panel am-panel-default">
+				  <div class="am-panel-hd">每日报表</div>
+				  <div class="am-panel-bd">
+				    <div class="am-scrollable-horizontal am-scrollable-vertical">
+	           	<table width="100%" class="am-table am-table-bordered am-table-striped am-text-nowrap" id="example-r">
+								<thead>
+								  <tr>
+								    <th>产品代码</th>
+								    <th>套帐编号</th>
+								    <th>产品名称</th>
+								    <th>估值日期</th>
+								    <th>个券代码</th>
+								    <th>个券名称</th>
+								    <th>持仓数量</th>
+								    <th>持仓方向</th>
+								    <th>持仓成本价</th>
+								    <th>当日收盘</th>
+								    <th>个券类别</th>
+								    <th>债券久期</th>
+								    <th>持仓市值</th>
+								    <th>持仓占比(%)</th>
+								    <th>项目单位净值</th>
+								    <th>项目净资产</th>
+								    <th>项目总资产</th>
+								    <th>估值日收盘价</th>
+								    <th>报表日收盘价</th>
+								    <th>报表日期</th>
+								  </tr>
+								</thead>
+								<tbody>
+								  <!--动态添加的代码-->
+								</tbody>
+							</table>	
+	           </div>
+				  </div>
+				</div>
+				<div class="am-panel am-panel-default">
+				  <div class="am-panel-hd">每日报表</div>
+				  <div class="am-panel-bd">
+				  	<div id="gczb"></div>
+				  	<div id="agzb"></div>
+				  </div>
+				  <!--<div class="am-panel-bd" id="agzb"></div>-->
+				</div>
+	   	</div>
+    <script type="text/javascript" src="../../js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../../js/amazeui.min.js"></script>
+		<script type="text/javascript" src="../../js/amazeui.datatables.min.js"></script>
+		<script type="text/javascript" src="../../js/dataTables.responsive.min.js"></script>
+    <script type="text/javascript" src="../../js/highstock.js"></script>
+    <script type="text/javascript" src="../../js/exporting.js"></script>
+    <script type="text/javascript" src="../../js/highcharts-zh_CN.js"></script>
+    <script type="text/javascript" src="../../js/t3.min.js"></script>
+    <script type="text/javascript" src="../../js/app.js"></script>
+    <script type="text/javascript">
+    	$(function(){		
+    		var pieChart = function (container, data, name) {
+    			 	$('#' + container).empty();
+            Highcharts.setOptions({
+                lang: {
+                    noData: '暂无数据'
+                }
+            });
+            $('#' + container).highcharts({
+                chart: {
+                    plotBackgroundColor: null,
+                    plotBorderWidth: null,
+                    plotShadow: false
+                },
+                credits: {
+                    enabled: false
+                },
+                title: {
+                    text: name
+                },
+                tooltip: {
+                    headerFormat: '{point.key}持仓<br>',
+                    pointFormat: '{point.name}市值: <b>{point.y}</b><br/>占比:{point.percentage:.2f}%<br/>'
+                },
+                plotOptions: {
+                    pie: {
+                        allowPointSelect: true,
+                        cursor: 'pointer',
+                        dataLabels: {
+                            enabled: true,
+                            style: {
+                                "fontSize": '9px'
+                            }
+                        }
+                    }
+                },
+                series: [{
+                    size: '60%',
+                    type: 'pie',
+                    name: name,
+                    data: data
+                }]
+            });
+        };
+    		
+        //获取估值日期
+        var begin_gzrq = $('#begin').val();
+        //获取产品名称
+        var produce_name = $('#doc-select-1').val();
+        //changeDate.datepicker.amui事件名称
+        $('#begin').datepicker().on('changeDate.datepicker.amui',function(event){
+        	var date = event.date;
+					var y = date.getFullYear();
+        	var m = date.getMonth() + 1;
+        	m = m < 10 ? '0'+m : m;
+        	var d = date.getDate();
+        	d = d < 10 ? '0'+d : d;
+        	begin_gzrq =  y + '' + m + '' +d;
+        });
+        
+       	$('#doc-select-1').change(function(){
+					produce_name = $(this).children('option:selected').val();
+       	});
+       	//将产品名称插入选择框中
+       	$('#doc-select-1').prepend("<option value='0'>请选择</option>"); 
+       	$.getJSON('zhshDaily.json',function(data){
+       		var result = data['product'];
+       		for(var i = 0; i < result.length; i++){
+       			var cp_name = result[i]['cp_name'];
+       			var ztbh = result[i]['ztbh'];
+       			$('#doc-select-1').append("<option value='"+ ztbh+"'>" + cp_name + "</option>"); 			
+       		}
+      	});
+      	//提交按钮事件
+      	$('#do-not-say-1 .am-btn-primary').click(function(){
+					$.getJSON('zsshScyz.json',function(data){
+						var result = data['message'];
+						for(var i = 0; i < result.length; i++){
+							if(result[i]['busi_dat'] == begin_gzrq && result[i]['ztbh'] == produce_name){
+								var tr = "<tr>" + 
+								         "<td>" + result[i]['cp_code'] + "</td>" +
+								         "<td>" + result[i]['ztbh'] + "</td>" +
+								         "<td>" + result[i]['cp_name'] + "</td>" +
+								         "<td>" + result[i]['gzrq'] + "</td>" +
+								         "<td>" + result[i]['sec_code'] + "</td>" +
+								         "<td>" + result[i]['sec_name'] + "</td>" +
+								         "<td>" + result[i]['hold_amount'] + "</td>" +
+								         "<td>" + result[i]['hold_direction'] + "</td>" +
+								         "<td>" + result[i]['hold_cb'] + "</td>" +
+								         "<td>" + result[i]['drspj'] + "</td>" +
+								         "<td>" + result[i]['sec_type'] + "</td>" +
+								         "<td>" + result[i]['gp_sshy'] + "</td>" +
+								         "<td>" + result[i]['hold_sz'] + "</td>" +
+								         "<td>" + parseFloat(result[i]['hold_zb']).toFixed(2) + "</td>" +
+								         "<td>" + result[i]['cpjz'] + "</td>" +
+								         "<td>" + result[i]['cpjzc'] + "</td>" +
+								         "<td>" + result[i]['cpzzc'] + "</td>" +
+								         "<td>" + result[i]['gzrspj'] + "</td>" +
+								         "<td>" + result[i]['jrspj'] + "</td>" +
+								         "<td>" + result[i]['busi_dat'] + "</td>" +
+								         "</tr>";
+								$('.am-table tbody').append(tr);
+								//获取饼图数据
+								$.getJSON('gczb.json',function(data){
+									var parData1 = [];
+									var chartData1 = data['message'];
+									for(var i=0;i<chartData1.length;i++){
+										for(var k in chartData1[i]){
+											parData1.push([k,parseFloat(chartData1[i][k])]);
+										}
+									};
+							  	pieChart('gczb', parData1, '个券持仓占比');	
+								});
+								
+								$.getJSON('Agzb.json',function(data){
+									var parData2 = [];
+									var chartData2 = data['message'];
+									for(var i=0;i<chartData2.length;i++){
+										for(var k in chartData2[i]){
+											parData2.push([k,parseFloat(chartData2[i][k])]);
+										}
+									};
+							  	pieChart('agzb', parData2, 'A股行业占比');	
+								});
+							}
+						}
+					});
+					
+					return false;
+      	});
+				
+				//从表格中取出数据添加到tbody中				
+//				$('#example-r').DataTable();
+				 
+    	})
+    </script>
+  </body>
+</html>

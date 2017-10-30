@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+	<head lang="en">
+		<meta charset="UTF-8">
+		<title>Register Page</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+		<meta name="viewport" content="width=device-width,initial-scale=1"/>
+		<meta name="format-detection" content="telephone=no"/>
+		<meta name="renderer" content="webkit"/>
+		<meta http-equiv="Cache-Control" content="no-siteapp"/>
+		<link rel="alternate icon" type="image/png" href="../i/favicon.png"/>
+		<link rel="stylesheet" type="text/css" href="../css/amazeui.min.css"/>
+		<style>
+		  	body{
+		  		background: url(../i/timg.jpg) no-repeat left top;
+		  		background-size: cover;
+		  	}
+		    .header {
+		      text-align: center;
+		    }
+		    .header h2 {
+		      font-size: 150%;
+		      color: #333;
+		      margin-top: 30px;
+		    }
+		    .header p {
+		      font-size: 14px;
+		    }
+		    .register-am-center input{
+		    	height: 46px;
+		    	margin-bottom: 30px;
+		    }
+		    .register-am-center .am-btn-default{
+		    	width: 100%;
+		    	background: #c07176;
+		    	border: none;
+		    	height: 46px;
+		    	color: #fff;
+		    	font-size: 18px;
+		    }
+		    #vld-tooltip {
+			    position: absolute;
+			    z-index: 1000;
+			    padding: 5px 10px;
+			    background: #F37B1D;
+			    min-width: 150px;
+			    color: #fff;
+			    transition: all 0.15s;
+			    box-shadow: 0 0 5px rgba(0,0,0,.15);
+			    display: none;
+  			}
+			#vld-tooltip:before {
+			    position: absolute;
+			    top: -8px;
+			    left: 50%;
+			    width: 0;
+			    height: 0;
+			    margin-left: -8px;
+			    content: "";
+			    border-width: 0 8px 8px;
+			    border-color: transparent transparent #F37B1D;
+			    border-style: none inset solid;
+			}
+  		</style>
+	</head>
+	<body>
+		<div class="header">
+			<div class="am-g">
+			    <h2>用户注册</h2>
+			    <p>Mom Information Query Platform<br/></p>
+			  	</div>
+			  	<hr/>
+		</div>
+		<div class="am-g">
+			<div class="am-u-sm-12 register-am-center">
+				<form action="" class="am-form" id="form-with-tooltip">
+					<fieldset>
+						<div class="am-form-group">
+							<input type="text" class="am-form-field am-round" id="doc-username-1" placeholder="帐号/用户名" required pattern="^[a-zA-Z0-9_]{6,16}$" 
+								data-foolish-msg="字母、数字，6-16位"/>
+						</div>
+						<div class="am-form-group">
+							<input type="password" class="am-form-field am-round" id="doc-password-1" pattern="^([\w\.\_]|[\u4e00-\u9fa5]){6,15}$" placeholder="请输入密码" 
+								required data-foolish-msg="6~15位，不能含有空格，支持中文、字母、数字、下划线和小数点"/>
+						</div>
+						<div class="am-form-group">
+							<input type="password" class="am-form-field am-round" id="doc-password-2" placeholder="确认密码" required/>
+						</div>
+						<p>
+							<button type="submit" class="am-btn am-round am-btn-default">注册</button>
+						</p>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+	</body>
+	<script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../js/amazeui.min.js"></script>
+    <script type="text/javascript" src="../js/echarts.min.js"></script>
+    <script type="text/javascript" src="../js/highstock.js"></script>
+    <script type="text/javascript" src="../js/exporting.js"></script>
+    <script type="text/javascript" src="../js/highcharts-zh_CN.js"></script>
+    <script type="text/javascript" src="../js/t3.min.js"></script>
+	<script type="text/javascript">
+		$(function(){
+			//注册按钮点击事件
+			$('.am-btn-default').click(function(){
+				var data = [
+					{username:1111,passWord:2222},
+					{username:2222,passWord:3333}
+					];
+				var user_info = $('#doc-username-1').val();
+				var password_info1 = $('.doc-password-1').val();
+				var password_info2 = $('.doc-password-2').val();
+				
+			});
+			var $form = $('#form-with-tooltip');
+		  	var $tooltip = $('<div id="vld-tooltip">提示信息！</div>');
+		  	$tooltip.appendTo(document.body);
+		
+		  	$form.validator();
+		
+		  	var validator = $form.data('amui.validator');
+		
+		  	$form.on('focusin focusout', '.am-form-error input', function(e) {
+		    	if (e.type === 'focusin') {
+		      		var $this = $(this);
+		      		var offset = $this.offset();
+		      		var msg = $this.data('foolishMsg') || validator.getValidationMessage($this.data('validity'));
+		
+		      	$tooltip.text(msg).show().css({
+		        		left: offset.left,
+		        		top: offset.top + $(this).outerHeight() + 10
+		      	});
+		    	} else {
+		      		$tooltip.hide();
+		    	}
+		  	});
+		});
+	</script>
+</html>

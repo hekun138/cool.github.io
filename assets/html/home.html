@@ -1,0 +1,184 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1">
+    <title>Hello</title>
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+    <link rel="icon" type="image/png" href="../i/favicon.png">
+    <!-- Add to homescreen for Chrome on Android -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="icon" sizes="192x192" href="../i/app-icon72x72@2x.png">
+    <!-- Add to homescreen for Safari on iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI"/>
+    <link rel="apple-touch-icon-precomposed" href="../i/app-icon72x72@2x.png">
+    <!-- Tile icon for Win8 (144x144 + tile color) -->
+    <meta name="msapplication-TileImage" content="../i/app-icon72x72@2x.png">
+    <meta name="msapplication-TileColor" content="#0e90d2">
+    <link rel="stylesheet" href="../css/amazeui.min.css">
+    <link rel="stylesheet" href="../css/demo.css">
+    <link rel="stylesheet" href="../css/app.css">
+  </head>
+  <body>
+      <!-- 侧边栏内容 -->
+      <div id="doc-oc-demo1" class="am-offcanvas">
+        <div class="am-offcanvas-bar">
+          <div class="am-offcanvas-content">
+              <div class="tpl-left-nav tpl-left-nav-hover">
+                <div class="tpl-left-nav-title">
+                   	
+                </div>
+                <div class="tpl-left-nav-list">
+                    <ul class="tpl-left-nav-menu">
+                        <li class="tpl-left-nav-item">
+                            <a href="javascript:;" class="nav-link active">
+                                <i class="am-icon-home"></i>
+                                <span>首页</span>
+                            </a>
+                        </li>
+                        <li class="tpl-left-nav-item">
+                            <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                                <i class="am-icon-bar-chart"></i>
+                                <span>估值报表</span>
+                                <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                            </a>
+                            <ul class="tpl-left-nav-sub-menu">
+                                <li>
+                                    <a href="../html/zssh/zsshDaily.html">
+                                        <i class="am-icon-angle-right"></i>
+                                        <span>每日报表</span>
+                                    </a>
+
+                                    <a href="table-images-list.html">
+                                        <i class="am-icon-angle-right"></i>
+                                        <span>资产配置及投资组合</span>
+                                    </a>
+                                    <a href="../html/zssh/cpjz.html">
+                                        <i class="am-icon-angle-right"></i>
+                                        <span>产品净值走势图</span>
+                                    </a>
+                                    <a href="form-news.html">
+                                        <i class="am-icon-angle-right"></i>
+                                        <span>原始估值表</span>
+                                    </a>
+                                 </li>
+                            </ul>
+                        </li>
+                        <li class="tpl-left-nav-item">
+                            <a href="javascript:;" class="nav-link tpl-left-nav-link-list">
+                                <i class="am-icon-table"></i>
+                                <span>产品评价</span>
+                                <i class="am-icon-angle-right tpl-left-nav-more-ico am-fr am-margin-right"></i>
+                            </a>
+                            <ul class="tpl-left-nav-sub-menu">
+                                <li>
+                                    <a href="table-font-list.html">
+                                        <i class="am-icon-angle-right"></i>
+                                        <span>回报/风险分析</span>
+                                    </a>
+                                 </li>
+                            </ul>
+                        </li>
+                        <li class="tpl-left-nav-item">
+                            <a href="/myproject/index.html" class="nav-link tpl-left-nav-link-list">
+                                <i class="am-icon-key"></i>
+                                <span>注销</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+              </div>
+            </div>
+         </div>
+      </div>
+      <!-- 侧边栏内容 -->                                                                                                                                        
+      <header class="am-topbar am-topbar-inverse admin-header">
+        <div class="am-topbar-brand">
+                <strong>CRCTRUST</strong><small>MOM数据查询</small>
+        </div>
+         <button class="am-topbar-btn am-topbar-toggle am-btn am-btn-sm am-btn-success am-show-sm-only" data-am-offcanvas="{target: '#doc-oc-demo1'}">
+            <span class="am-sr-only">导航切换</span> 
+            <span class="am-icon-bars"></span>
+         </button>
+     	</header>
+     	<div class="am-cf">
+		        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">各种数据报表</strong></div>
+		      </div>
+	    <div class="am-content">
+	    	<div class="am-panel-group" id="accordion">
+	    		<div class="am-panel am-panel-default">
+	    			<div class="am-panel-hd">
+	    				<h4 class="am-panel-title" data-am-collapse="{parent: '#accordion',target: '#do-not-say-1'}">
+	    					...
+	    				</h4>
+	    			</div>
+	    			<div id="do-not-say-1" class="am-panel-collapse am-collapse am-in">
+	    				<div class="am-panel-bd">
+	    					<form action="" class="am-form" data-am-validator>
+									<div class="am-form-group">
+										<label for="doc-select-1">请选择产品名称</label>
+										<select id="doc-select-1">
+
+										</select>
+										<span class="am-form-caret"></span>
+									</div>
+									<p>
+										起始日期<br />
+										<input type="text" id="begin" class="am-form-field" placeholder="YYYY-MM-SS" data-am-datepicker readonly required/>
+									</p>
+									<p>
+										截止日期<br />
+										<input type="text" id="end" class="am-form-field" placeholder="YYYY-MM-SS" data-am-datepicker readonly required/>
+									</p>
+									<p><button class="am-btn am-btn-primary">提交</button></p>
+								</form>
+	    				</div>
+	    			</div>
+	    		</div>	    		
+	    	</div>
+	    </div>
+	    
+	    
+	    <!--<div data-module="firstlevel" class="am-animation-slide-left">
+		      <div class="am-cf am-padding">
+		        <div class="am-fl am-cf"><strong class="am-text-primary am-text-lg">各种数据报表</strong></div>
+		      </div>
+		      <div class="am-g">
+		        <div class="am-u-md-6 am-u-sm-12">
+		          <div class="am-panel am-panel-default">
+		              <div class="am-panel-hd">
+		                <h4 class="am-panel-title" data-am-collapse="{ target: '#bse'}">
+		                 	某地区温度数据
+		                </h4>
+		              </div>
+		              <div id="base" class="am-panel-collapse am-collapse am-in">
+		                <div class="am-panel-bd">
+		                   <div id="basic-main-content" render="true" ></div>
+		                </div>
+		              </div>
+		           </div>
+		        </div>  
+		      </div>
+		    </div>-->
+    <script type="text/javascript" src="../js/jquery-1.11.1.js"></script>
+    <script type="text/javascript" src="../js/amazeui.min.js"></script>
+    <script type="text/javascript" src="../js/echarts.min.js"></script>
+    <script type="text/javascript" src="../js/highstock.js"></script>
+    <script type="text/javascript" src="../js/exporting.js"></script>
+    <script type="text/javascript" src="../js/highcharts-zh_CN.js"></script>
+    <script type="text/javascript" src="../js/t3.min.js"></script>
+    <script type="text/javascript" src="../js/app.js"></script>
+ 		<script type="text/javascript">
+ 			
+ 		</script>
+  </body>
+</html>

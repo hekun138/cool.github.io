@@ -1,0 +1,173 @@
+ html,
+ body {
+    overflow: inherit;
+ }
+
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+input {
+     border: none;
+}
+
+// a {
+//     color: #337ab7;
+// }
+
+// a:hover {
+//     cursor: pointer;
+//     color: #23527c;
+// }
+
+.am-offcanvas-content{
+    padding: 5px 0px 5px 5px;
+}
+
+.mt{
+	margin-top: 10px;
+}
+
+.login-am-center .am-form input{
+	border: none;
+	line-height: 30px;
+}
+
+.login-am-center .am-btn-default1{
+	width: 100%;
+	background: #6a859b;
+	color: #fff;
+}
+.login-am-center .am-btn-default2{
+	margin-top: 10px;
+	width: 100%;
+	background: #c47f78;
+	color: #fff;
+}
+.footer{
+	text-align: center;
+	color: #FFFFFF;
+}
+.tpl-badge-success {
+    background-color: #36c6d3!important;
+}
+
+.tpl-badge-danger {
+    background-color: #ed6b75!important;
+}
+
+.tpl-badge-primary {
+    background-color: #8E44AD!important;
+}
+#doc-select-1 option{
+	width: 375px;
+}
+
+.tpl-left-nav-title {
+    height: 40px;
+    line-height: 40px;
+    padding-left: 18px;
+    color: #5b9bd1;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.tpl-left-nav-item .nav-link {
+    display: block;
+    position: relative;
+    margin: 1px 0 0;
+    border: 0;
+    padding: 12px 15px;
+    padding-top: 6px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+
+.tpl-left-nav-item .nav-link i,
+.tpl-left-nav-sub-menu a i {
+    font-size: 20px;
+    position: relative;
+    text-shadow: none;
+    font-weight: 300;
+    top: 2px;
+    margin-left: 1px;
+    margin-right: 6px;
+    color: #fff;
+}
+
+.tpl-left-nav-item .nav-link:hover {
+    background: #f2f6f9;
+    color: #5b9bd1;
+    border-left: 3px solid #5C9ACF!important;
+    margin-left: -3px;
+    padding-left: 15px;
+}
+
+.tpl-left-nav-item .nav-link:hover i,
+.tpl-left-nav-sub-menu a:hover i {
+    color: #5b9bd1;
+}
+
+.tpl-left-nav-item .nav-link:hover span,
+.tpl-left-nav-sub-menu a:hover span {
+    color: #5b9bd1;
+}
+
+
+.tpl-left-nav-sub-menu {
+    list-style: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+.tpl-left-nav-sub-menu li a:hover{
+    background: #f2f6f9;
+    color: #5b9bd1;
+    border-left: 3px solid #5C9ACF!important;
+}
+
+.tpl-left-nav-more-ico {
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
+    font-size: 16px!important;
+    top: 4px!important;
+}
+
+
+.tpl-left-nav-sub-menu a {
+    display: block;
+    margin:0;
+    padding: 4px 14px 9px 30px;
+    font-weight: 400;
+    background: 0 0;
+    font-size: 14px;
+}
+
+.tpl-left-nav-sub-menu a:hover,
+.tpl-left-nav-sub-menu a.active {
+    color: #5b9bd1;
+    background: #f2f6f9!important;
+}
+
+.tpl-left-nav-content {
+    background-color: #36c6d3;
+    border-radius: 1000px;
+    color: #fff!important;
+    padding: 0px 8px!important;
+    float: right;
+    position: relative;
+    font-style: normal;
+    font-family: "微软雅黑";
+    top: 10px!important;
+    font-size: 12px!important;
+}
+/*每日报表表格的样式start*/
+/*.dailytable .am-panel-bd{
+	min-height: 300px;
+}*/
+/*每日报表表格的样式end*/
